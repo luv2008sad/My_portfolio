@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Atharv Sadigale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    h1, h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    ul, p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    /* Section Background Images */
+    #home {
+      background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #education {
+      background-image: url('https://images.unsplash.com/photo-1584697964154-0d0ef2a2fbee?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #skills {
+      background-image: url('https://images.unsplash.com/photo-1531497865142-48740d2c5f3c?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #projects {
+      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #experience {
+      background-image: url('https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    #contact {
+      background-image: url('https://images.unsplash.com/photo-1518887576874-7a9af66a1ef1?auto=format&fit=crop&w=1600&q=80');
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu a {
+        display: block;
+        margin: 10px 0;
+      }
+      .section-content {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Portfolia</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="section-content">
+      <h1>I am Atharv Sadigale</h1>
+      <p>A Computer Engineering Student in Government Polytechnic Solapur</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-content">
+      <h2>Education</h2>
+      <ul>
+        
+        <li><strong>Studying in Diploma of Computer Science </strong> – MSBTE (2024-25)</li>
+        <li><strong>SSC</strong> – Maharashtra State Board, Pune (2024)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <ul>
+        <li>Problem Solving</li>
+        <li>Logical Thinking</li>
+        <li>Digital Literacy & MS Office Tools</li>
+        <li>Communications & Soft Skills</li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Medicine & Drug Info. System: </strong> Micro Project In C Language To Manage A Medical And To give Use of Medicine And Drug Present in That Medicine.</li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-content">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Had Zero Experience in This Feild</li>
+        <li><strong>As a Shopkeeper in Medical</strong>  (April 2024 – Sept 2024)<br>Duration: 6 Months</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Phone:</strong> +91 9763628523</li>
+        <li><strong>Email:</strong> atharvsadigale007@gmail.com</li>
+        <li><strong>Languages:</strong> English, Hindi, Marathi, Korean</li>
+      </ul>
+      <p>I am passionate about Studying in G.P. College and continuously learning new technologies in computer engineering.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Atharv U. Sadigale. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
